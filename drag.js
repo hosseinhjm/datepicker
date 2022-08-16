@@ -27,25 +27,3 @@ $('#marker').on('mousedown', function(){
                         
 });                    
 }); 
-
-
-// const getDateFormat = (date) => {
-//   return `${(date.getMonth() + 1).toString().padStart(2, "0")}-${date
-//     .getDate()
-//     .toString()
-//     .padStart(2, "0")}-${date.getFullYear()}`;
-// };
-
-// const daysInYear = (year) => {
-//   return (year % 4 === 0 && year % 100 > 0) || year % 400 == 0 ? 366 : 365;
-// };
-
-// document.querySelectorAll(".useful-datepicker").forEach(() => {
-//   var input ;
-
-//   const today = new Date();
-
-//   input.value = getDateFormat(today);
-
-// })
-
