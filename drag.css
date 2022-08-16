@@ -1,0 +1,179 @@
+div#dynamic-container{
+    width:500px;
+    height:500px;
+    background-color: #272c39;
+    position:absolute;
+    left: 46em;
+    top: 15em;
+}
+
+.useful-datepicker {
+    transform: scale(1.35);
+    width: 300px;
+    position: absolute;
+    left: 49.5em;
+    top: 12em;
+}
+
+.form-input p {
+    appearance: none;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    font-feature-settings: "tnum";
+    width: 100%;
+    color: #f6f6f9;
+    background-color: #272c39;
+    padding: 12px 10px;
+    line-height: 20px;
+    margin: 0;
+    border-radius: 7px;
+    box-shadow: 0px 1px 3px rgba(8, 9, 12, 0.1), 0px 4px 16px rgba(8, 9, 12, 0.1), inset 0px 1px 0px rgba(234, 240, 255, 0.04);
+}
+
+.form-input input::placeholder {
+    color: #788199;
+    opacity: 1;
+}
+
+.form-input button {
+    appearance: none;
+    background: none;
+    border: none;
+    border-radius: 0 7px 7px 0;
+    padding: 12px 12px 12px 24px;
+    margin: 0;
+    position: absolute;
+    right: -22px;
+    top: 0;
+    cursor: pointer;
+}
+
+.form-input button svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    fill: none;
+    stroke: #879aff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+div#innerCircle{
+    width: 380px; 
+    height: 380px; 
+    position: absolute; 
+    left: 2.2em; 
+    top: 2.2em; 
+    background-color: #272c39;
+    border-radius:190px; 
+    -moz-border-radius: 190px; 
+    -webkit-border-radius: 190px;
+}
+
+
+div#marker{
+    /* width: 10px; 
+    height:10px;  */
+    /* background: black;  */
+    position:absolute; 
+    left: 13.5em; 
+    top: 1em;
+    cursor: pointer;
+    -moz-transform:rotate(45deg);
+    -moz-transform-origin:5px 200px;
+            
+    transform:rotate(45deg);
+    transform-origin:5px 200px;                          
+
+    -ms-transform:rotate(45deg);
+    -ms-transform-origin:5px 200px;                                
+            
+    -webkit-transform:rotate(45deg);
+    -webkit-transform-origin:5px 200px;                       
+
+    z-index:17;
+} 
+
+.solar-system-dash{
+  width: 380px;
+  height: 380px;
+  /* display: block; */
+  fill: none;
+  stroke: #464c5b;
+}
+
+.earth-dash{
+  width: 85px;
+  height: 85px;
+  display: block;
+  fill: none;
+  stroke: #464c5b;
+  position: absolute;
+  left: 58px;
+}
+
+
+.earth-planet{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 103px;
+    top: 41px;
+    transform: translate(-50%, -50%);
+}
+
+.earth{
+    position: absolute;
+    left: 20%;
+    top: 4%;
+    /* transform: translate(calc(-50% + 90px), -50%); */
+}
+
+
+.sun {
+    position: absolute;
+    left: 14.2em;
+    top: 14.3em;
+    transform: translate(-50%, -50%);
+}
+.blur {
+    width: 122px;
+    height: 122px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: #fcd385;
+    opacity: 0.2;
+}
+.blur-1 {
+    animation: sun-blur 3s linear 0s infinite;
+}
+.blur-2 {
+    animation: sun-blur 3s linear -1s infinite;}
+.blur-3 {
+    animation: sun-blur 3s linear -2s infinite;
+}
+@keyframes sun-blur {
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1.75);
+    }
+}
+.sun svg {
+    fill: #fcd385;
+    width: 120px;
+    height: 120px;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
